@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+   <ImageView
+       android:id="@+id/image_view"
+       android:layout_width="250dp"
+       android:layout_height="175dp"
+       android:layout_centerInParent="true"
+       android:scaleType="matrix"
+       android:src="@drawable/spindark"
+       tools:ignore="ContentDescription" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@id/image_view"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="-30dp"
+       android:text="\u25bc"
+       android:textColor="#ff4444"
+       android:textSize="48dp"
+       tools:ignore="HardcodedText,SpUsage" />
+
+   <Button
+       android:id="@+id/button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/image_view"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="20dp"
+       android:text="Press to spin"
+       tools:ignore="HardcodedText" />
+
+
+
+</RelativeLayout>
